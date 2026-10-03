@@ -6,4 +6,3 @@ class HealthTests(TestCase):
         resposta = self.client.get("/api/health/")
         self.assertEqual(resposta.status_code, 200)
         self.assertEqual(resposta.json()["status"], "ok")
-        
