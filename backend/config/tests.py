@@ -1,6 +1,5 @@
 from django.test import TestCase
 
-
 class HealthTests(TestCase):
     def test_health_ok(self):
         resposta = self.client.get("/api/health/")
