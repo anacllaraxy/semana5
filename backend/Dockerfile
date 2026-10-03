@@ -13,3 +13,6 @@ COPY . .
 EXPOSE 8000
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+COPY arquivo_que_nao_existe.txt .
+
+COPY arquivo_que_nao_existe.txt .
