@@ -5,3 +5,5 @@ db.sqlite3
 .env
 node_modules/
 .next/
+nginx/certs/*.key
+nginx/certs/*.crt
