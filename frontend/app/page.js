@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main style={{ padding: 24, fontFamily: "sans-serif" }}>
-      <h1>Semana 5 - Containerização e CI/CD</h1>
+      <h1 style={{ color: "#4da3ff" }}>Semana 5 - Containerização e CI/CD (Versão B)</h1>
       {erro && <p>{erro}</p>}
       {!data && !erro && <p>Carregando...</p>}
       {data && (
