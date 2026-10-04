@@ -10,7 +10,7 @@ export default function Home() {
     fetch("/api/health/")
       .then((res) => res.json())
       .then(setData)
-      .catch(() => setErro("Não foi possível falar com o backend"));
+      .catch(() => setErro("Dados indisponíveis no momento"));
   }, []);
 
   return (
