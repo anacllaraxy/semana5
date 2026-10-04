@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { getHealth } from "./lib/dataSource";
 
 export default function Home() {
   const [data, setData] = useState(null);
   const [erro, setErro] = useState(null);
 
   useEffect(() => {
-    fetch("/api/health/")
-      .then((res) => res.json())
+    getHealth()
       .then(setData)
       .catch(() => setErro("Dados indisponíveis no momento"));
   }, []);
