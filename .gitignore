@@ -7,3 +7,11 @@ node_modules/
 .next/
 nginx/certs/*.key
 nginx/certs/*.crt
+
+# Firebase
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+.firebase/
+*-firebase-adminsdk-*.json
+service-account*.json
